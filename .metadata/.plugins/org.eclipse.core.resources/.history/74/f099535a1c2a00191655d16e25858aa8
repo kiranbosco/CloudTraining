@@ -271,10 +271,8 @@ public class StringClass  {
 			char[] ggs =new char[20];
 			getC.getChars(2, 10, ggs, 0);
 			System.out.println(ggs);
-			
 
-			System.out.println();
-			// NEW Add
+			
 			
 		}
 		
