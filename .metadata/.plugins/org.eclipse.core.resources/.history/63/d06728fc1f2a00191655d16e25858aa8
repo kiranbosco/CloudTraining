@@ -273,6 +273,8 @@ public class StringClass  {
 			System.out.println(ggs);
 			
 
+			System.out.println();
+			// NEW Add
 			
 		}
 		
