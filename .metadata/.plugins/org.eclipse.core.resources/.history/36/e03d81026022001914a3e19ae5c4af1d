@@ -1,0 +1,11 @@
+package com.logicalOperator;
+
+public class ArrayCopy {
+
+	public static void main(String[] args) {
+		
+		int arr1[] = {10,52,45,12,3};
+		int ar2[] =  new int[arr1.length];
+	
+	}
+}

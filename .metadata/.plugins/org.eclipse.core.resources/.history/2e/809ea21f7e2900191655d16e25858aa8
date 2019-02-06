@@ -1,0 +1,8 @@
+package com.mathClass;
+
+public class RandomNumber {
+
+	public static void main(String[] args) {
+		
+	}
+}

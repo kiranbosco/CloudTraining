@@ -1,0 +1,16 @@
+package com.collections;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class GetList {
+	
+	public static void main(String[] args) {
+
+		
+		int emp =50;
+		for(int i =25; i<emp-30; i++) {
+			System.out.println(i);
+		}
+	}
+}

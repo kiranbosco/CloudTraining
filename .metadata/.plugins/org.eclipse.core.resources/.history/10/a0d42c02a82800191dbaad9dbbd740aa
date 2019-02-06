@@ -1,0 +1,12 @@
+package com.collections;
+
+import java.util.Collection;
+
+public class UnmodifyableClass {
+
+	public static void main(String[] args) {
+
+		Collection read = Collections.unmodifiableList(new ArrayList<>())();
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.collections;
+
+public class UnmodifyableClass {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.logicalOperator;
+
+public class DuplicatesInArray {
+	public static void main(String[] args) {
+
+	}
+
+}

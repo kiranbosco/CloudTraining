@@ -1,0 +1,12 @@
+package com.collections;
+
+import java.util.ArrayList;
+
+public class GetList {
+	
+	public static void main(String[] args) {
+		
+		List<String,Integer> list = new ArrayList<>();
+	}
+
+}

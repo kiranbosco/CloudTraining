@@ -1,0 +1,75 @@
+package com.collections;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
+public class UnmodifyableClass {
+
+	public static void main(String[] args) {
+
+
+		/*
+		 * Collection readOnlyCollection = Collections.unmodifiableCollection(new
+		 * ArrayList<String>()); readOnlyCollection.add("Sydney Sheldon"); //raises
+		 * readOnlyCollection.add("us Sheldon"); //raises
+		 * readOnlyCollection.add("uk Sheldon"); //raises
+		 * 
+		 * System.out.println(readOnlyCollection);
+		 * 
+		 * 
+		 */
+
+		Boolean b = true;
+		String str = String.valueOf(b);
+		System.out.println(str);
+
+		/*
+		 * Boolean bb = false; Integer i = Integer.valueOf(bb);
+		 * 
+		 * This is the unresolved problem in java boolean can be suport the string only
+		 * 
+		 */
+
+		/*
+		 * Boolean bs = true; Float f = Float.valueOf(bs);
+		 * 
+		 * Boolean bc =true; Double d = Double.valueOf(bc);
+		 * 
+		 * Boolean bch = true; Character c = Character.valueOf(bch);
+		 * 
+		 * Boolean bscr = true; String strt = String.valueOf(bscr);
+		 * 
+		 * 
+		 * 
+		 * 
+		 */
+
+		int age =18;
+		if(age<19) {
+			System.out.println("welcome");
+		}
+		else {
+			System.out.println("sorry");
+		}
+
+
+		System.out.println();
+
+
+		int num =10;
+		if(num%2!=0) {
+			System.out.println(" Even");  // 2*1=2
+			
+		}
+
+		else {
+			System.out.println("odd");
+		}
+
+
+
+
+	}
+
+}

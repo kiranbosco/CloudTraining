@@ -1,0 +1,18 @@
+package com.collections;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
+public class UnmodifyableClass {
+
+	public static void main(String[] args) {
+
+
+		Collection readOnlyCollection = Collections.unmodifiableCollection(new ArrayList<String>());
+        readOnlyCollection.add("Sydney Sheldon"); //raises
+
+Read more: http://www.java67.com/2012/08/how-to-create-read-only-collection-in-java-example.html#ixzz5eaSxghEc
+	}
+
+}

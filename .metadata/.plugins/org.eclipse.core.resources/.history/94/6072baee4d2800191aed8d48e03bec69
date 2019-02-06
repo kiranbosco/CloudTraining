@@ -1,0 +1,24 @@
+package com.basic;
+
+import java.util.HashMap;
+
+public class StringRepeateChar {
+	
+	public static void main(String[] args) {
+		
+		String content ="AABBCC";
+		String contentArr[] = content.split("");
+		
+		int count =0;
+		
+		HashMap<String , Integer> hs = new HashMap<>();
+		for(int  i =0; i<contentArr.length;i++) {
+			
+			String currentLetter = contentArr[i];
+			
+			if(!hs.containsKey(key))
+		}
+		
+	}
+
+}

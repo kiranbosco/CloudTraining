@@ -1,0 +1,10 @@
+package com.collections;
+
+public class GetEmployee {
+
+	String name;
+	int id;
+	String lname;
+
+
+}

@@ -1,0 +1,9 @@
+package com.singleTone;
+
+public class Test extends Testing {
+	
+	public void disp1() {
+		System.out.println("hello i am single tone desing patterns");
+	}
+
+}

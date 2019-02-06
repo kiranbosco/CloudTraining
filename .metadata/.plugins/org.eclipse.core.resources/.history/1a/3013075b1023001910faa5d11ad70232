@@ -1,0 +1,19 @@
+package com.interfaces;
+
+public class InheritanceOverriding {
+	
+	void m1() {
+		
+		System.out.println("i am super class method()");
+	}
+
+}
+class Sub extends InheritanceOverriding{
+	
+	@Override
+	
+void m() {
+		
+		System.out.println("i am super class method()");
+	}
+}

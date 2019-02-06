@@ -1,0 +1,5 @@
+package com.staticVSdynamicBinging;
+
+public class WithOutMainMethod {
+
+}

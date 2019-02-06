@@ -1,0 +1,16 @@
+package com.finalKey;
+
+public class FinalKey {
+
+	final int speedLimit=50;
+
+	public FinalKey() {
+
+		speedLimit =20;
+		System.out.println(speedLimit);
+	}
+	public static void main(String[] args) {
+		
+		FinalKey f = new FinalKey();
+	}
+}

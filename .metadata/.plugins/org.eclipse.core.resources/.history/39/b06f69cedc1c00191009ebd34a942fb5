@@ -1,0 +1,13 @@
+package com.collections;
+
+import java.util.HashMap;
+
+public class HashMapAddElement {
+	
+	public static void main(String[] args) {
+		 
+		HashMap<integer,String> map = new HashMap<>();
+		
+	}
+
+}

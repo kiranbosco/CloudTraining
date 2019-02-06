@@ -1,0 +1,19 @@
+package com.instanceInitilizer;
+
+public class InstanceInitilizerBlock {
+	
+	public InstanceInitilizerBlock() {
+
+	System.out.println("Parent class   Constructor()");
+	}
+
+}
+class SubClass extends InstanceInitilizerBlock{
+	
+
+	public SubClass() {
+		super();
+
+	};
+	
+}

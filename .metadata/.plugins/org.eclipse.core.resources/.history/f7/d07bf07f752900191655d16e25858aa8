@@ -1,0 +1,9 @@
+package com.instanceInitilizer;
+
+public class InstanceInitilizerBlock {
+
+	public InstanceInitilizerBlock() {
+
+	}
+
+}

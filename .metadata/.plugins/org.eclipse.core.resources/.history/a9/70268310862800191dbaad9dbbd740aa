@@ -1,0 +1,17 @@
+package com.collections;
+
+
+public class GetList {
+	
+	public static void main(String[] args) {
+
+		/*
+		 * int emp =50; for(int i =25; i<emp-30; i++) { System.out.println(i); }
+		 */
+		
+		int emp =100;
+		for(int j=45; j<emp-50;j++) {
+			System.out.println(j);
+		}
+	}
+}

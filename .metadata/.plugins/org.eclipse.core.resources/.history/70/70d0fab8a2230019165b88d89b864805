@@ -1,0 +1,16 @@
+package com.exceptionHandiling;
+
+import java.io.IOException;
+import java.sql.SQLException;
+import java.sql.SQLWarning;
+
+public class MultiCatchBlock {
+	
+	public  static final MultiCatchBlock initilize ="Obj";
+	
+	public static void main(String[] args)  {
+		
+		
+		}
+	}
+

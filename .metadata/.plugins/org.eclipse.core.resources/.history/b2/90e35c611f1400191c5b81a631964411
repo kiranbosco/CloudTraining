@@ -1,0 +1,10 @@
+package com.clone;
+
+public class CloneObject {
+	
+	int id;
+	int age;
+	public CloneObject(int id, int age) {
+	}
+
+}

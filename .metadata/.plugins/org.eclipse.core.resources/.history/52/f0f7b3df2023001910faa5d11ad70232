@@ -1,0 +1,9 @@
+package com.exceptionHandiling;
+
+public class MultiCatchBlock {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

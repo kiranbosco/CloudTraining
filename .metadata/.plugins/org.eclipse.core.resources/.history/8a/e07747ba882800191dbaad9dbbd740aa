@@ -1,0 +1,42 @@
+package com.basic;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class StringRepeateChar {
+
+	public static void main(String[] args) {
+
+		
+		String content ="AABBCC";
+		String contentArr[] = content.split("");
+		int count=0;
+		HashMap<String, Integer> hs = new HashMap<>();
+		for(int i =0; i<contentArr.length; i++) {
+			
+			String currentLetter = contentArr[i];
+			if(!hs.containsKey(currentLetter)) {
+				hs.put(currentLetter, 1);
+				count =1;
+				
+			}
+			
+			else {
+				count = count+1;
+
+				hs.put(currentLetter, count);
+			}
+		}
+		System.out.println(hs);
+		
+		
+		System.out.println();
+
+		
+		int emp =50;
+		for(int j=25; j<emp-30; j++) {
+			System.out.println(j);
+		}
+	}
+	
+}

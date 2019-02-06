@@ -1,0 +1,14 @@
+package com.overloading;
+
+public class TypePromote {
+	
+	public int add(int a, int b) {
+		
+		return a+b;
+	}
+	public static void main(String[] args) {
+		
+		TypePromote t = new TypePromote(10,20);
+
+	}
+}

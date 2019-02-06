@@ -1,0 +1,34 @@
+package com.collections;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction;
+
+public class MapExe {
+	
+	public void convert() {
+		
+		String str ="19 98 09 0";
+		
+		String[] s = str.split(",");
+		System.out.println(s);
+				
+	}
+	
+	@Override
+	public String toString() {
+		return "MapExe []";
+	}
+
+	public static void main(String[] args) {
+		
+		MapExe m = new MapExe();
+		m.convert();
+
+		
+	}
+	}
+

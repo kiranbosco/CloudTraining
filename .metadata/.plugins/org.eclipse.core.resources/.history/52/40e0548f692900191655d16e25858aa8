@@ -1,0 +1,10 @@
+package com.staticVSdynamicBinging;
+
+public class WithOutMainMethod {
+	
+	static {
+		
+		System.out.println(" i am static method()");
+	}
+
+}

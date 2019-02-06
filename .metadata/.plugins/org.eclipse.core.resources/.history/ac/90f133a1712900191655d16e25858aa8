@@ -1,0 +1,15 @@
+package com.overloading;
+
+public class TypePromote {
+	
+	public void  sum(int a, int b) {
+		
+		System.out.println("addition");
+		
+	}
+	
+
+	public static void main(String[] args) {
+		
+	}
+}

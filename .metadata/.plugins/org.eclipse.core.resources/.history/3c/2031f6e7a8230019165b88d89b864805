@@ -1,0 +1,15 @@
+package com.singleTone;
+
+public class Testing {
+	
+	private static Testing instance =null;
+	
+	private Testing() {
+		
+	}
+	
+	public static Testing getInstance() {
+		
+	}
+
+}

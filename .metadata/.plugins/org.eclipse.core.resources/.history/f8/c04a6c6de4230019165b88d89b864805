@@ -1,0 +1,22 @@
+package com.basic;
+
+public class Age {
+
+	public static void main(String[] args) {
+		
+		int age =11;
+		
+	/*	if(age!=10) {
+			System.out.println("Get chance to play the game");
+		}
+		else {
+			System.out.println("sorry");
+		}*/
+		
+		if(age ==10 && age==10) {
+			System.out.println("play with me game");
+			
+		}
+		System.out.println("Sorry");
+	}
+}

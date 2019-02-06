@@ -1,0 +1,17 @@
+package com.collections;
+
+public class GetEmployee {
+
+	String name;
+	int id;
+	String lname;
+
+
+	public GetEmployee(String name, int id, String lname) {
+		super();
+		this.name = name;
+		this.id = id;
+		this.lname = lname;
+	}
+	
+}

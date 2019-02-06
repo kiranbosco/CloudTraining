@@ -1,0 +1,18 @@
+package com.overloading;
+
+public class TypePromote {
+
+	static int add(int a, int b) {
+		
+		return a+b;
+	}
+	
+static float add(float a , int b) {
+	
+	return a+b;
+}
+	public static void main(String[] args) {
+
+	}	
+
+}

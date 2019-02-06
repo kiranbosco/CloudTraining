@@ -1,0 +1,17 @@
+package com.basic;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class StringRepeateChar {
+
+	public static void main(String[] args) {
+
+		
+		String content ="AABBCC";
+		String contentArr[] = content.split(" ");
+		int count=0;
+		HashMap<String, Integer> hs = new HashMap<>();
+	}
+	
+}

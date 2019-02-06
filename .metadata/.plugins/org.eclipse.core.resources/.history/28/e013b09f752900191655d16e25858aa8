@@ -1,0 +1,11 @@
+package com.instanceInitilizer;
+
+public class InstanceInitilizerBlock {
+
+	public InstanceInitilizerBlock() {
+		
+		System.out.println("Super class Consturctor");
+
+	}
+
+}

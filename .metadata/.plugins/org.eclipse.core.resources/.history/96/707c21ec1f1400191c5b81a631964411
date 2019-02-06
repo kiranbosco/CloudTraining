@@ -1,0 +1,23 @@
+package com.clone;
+
+public class CloneObject implements Cloneable{
+	
+	int id;
+	int age;
+	public CloneObject(int id, int age) {
+		
+		this.id=id;
+		this.age = age;
+	
+	}
+	public Object clone() throws CloneNotSupportedException{
+		return super.clone();
+		
+		
+	}
+	public static void main(String[] args) {
+		CloneObject obje = new CloneObject(10, 29);
+		CloneObject ob = (CloneObject)obje;
+	}
+
+}
