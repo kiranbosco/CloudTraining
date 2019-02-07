@@ -33,7 +33,7 @@ public class FindDuplicates {
 		
 		
 		
-		Set<Integer> s = new HashSet<>(list);
+		Set s = new HashSet<>(list);
 		s.addAll(list);
 		System.out.println(s);
 	}

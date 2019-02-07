@@ -1,8 +1,8 @@
 package com.arrays;
 
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.Arrays;
+import java.util.List;
 
 public class FindDuplicates {
 
@@ -30,11 +30,5 @@ public class FindDuplicates {
 		
 		
 		// Or another way to find the duplicates in list
-		
-		
-		
-		Set<Integer> s = new HashSet<>(list);
-		s.addAll(list);
-		System.out.println(s);
 	}
 	}
