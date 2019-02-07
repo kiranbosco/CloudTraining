@@ -1,0 +1,32 @@
+package com.basic;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class FindIntegerDuplicates {
+
+	public static void main(String[] args) {
+
+		//Convert the arrys into arraylsit
+
+		List<Integer> al = new ArrayList<Integer>();
+		al.add(10);
+		al.add(20);
+		al.add(30);
+		al.add(40);
+
+		// Cont able to conver the Listinteger to integer values u can conver the
+		// object[] integer list to object arry
+		/*
+		 * Integer [] obj =al.toArray(); for(Integer i : obj) { System.out.println(i); }
+		 */
+
+
+		Object[] arr = al.toArray();
+
+		for(Object o :al) 
+		{ System.out.println(o); }
+
+
+	}
+}

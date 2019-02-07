@@ -1,0 +1,12 @@
+package com.ArraysConcepts;
+
+
+
+public class ConvertArrayToList {
+
+	public static void main(String[] args) {
+
+
+		int [] array[] = {10,50,42,50,10,20,50,42};
+	}
+	}

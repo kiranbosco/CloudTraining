@@ -1,0 +1,31 @@
+package com.exceptionHandiling;
+
+public class MultiCatachBlock {
+	
+	public static void main(String[] args) {
+		
+		try {
+		      int data=100/0;  
+System.out.println(data);
+	}catch (ArithmeticException e) {
+		
+		
+	}
+		catch (ArrayIndexOutOfBoundsException e) {
+		}
+		
+		catch (NumberFormatException e) {
+		}
+		
+		catch (NullPointerException e) {
+		}
+		
+		catch (Exception e) {
+			
+			System.out.println("This are suport multicatch block exception in java");
+		}
+	}
+	
+	
+
+}

@@ -1,9 +1,0 @@
-package com.propertiesFiles;
-
-public class PropertiesFile {
-	
-	public static void main(String[] args) {
-		
-	}
-
-}

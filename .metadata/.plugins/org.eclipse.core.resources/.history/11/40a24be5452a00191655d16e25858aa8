@@ -1,0 +1,14 @@
+package com.exceptionHandiling;
+
+public class MultiCatachBlock {
+	
+	public void multicath() {
+		
+		int id =10;
+		int val =0;
+		int c = id/val;
+	}
+
+
+
+}

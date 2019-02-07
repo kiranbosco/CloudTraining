@@ -1,0 +1,10 @@
+package com.arrays;
+
+public class ConvertArrayToArrayList {
+	
+	public void vonvertPrimitive() {
+		
+	 String [] str = {"kiran","kumar","charan"};
+	}
+
+}

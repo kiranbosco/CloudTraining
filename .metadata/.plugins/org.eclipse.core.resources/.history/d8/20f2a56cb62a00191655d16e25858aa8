@@ -1,0 +1,22 @@
+package com.basic;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class FindIntegerDuplicates {
+
+	public static void main(String[] args) {
+
+
+		ArrayList< Integer> list = new ArrayList<>();
+		for(Integer in : list) {
+
+		}
+		ArrayList<Integer> newlist = new ArrayList<>(Arrays.asList(10,10,20,50,50,40));
+
+		System.out.println(newlist);
+
+		ArrayList< Integer> ll = list;
+		System.out.println(ll);
+	}
+}

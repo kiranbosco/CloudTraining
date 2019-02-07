@@ -36,7 +36,8 @@ public class HashMapWIthBook {
 			System.out.println(entry.getKey() + " "+ entry.getValue());
 		}*/
 
-		map.entrySet().stream().sorted(Map.Entry.comparingByKey()).forEach(System.out::println);
+		map.entrySet().stream().sorted(Map.Entry.comparingByKey())
+		.forEach(System.out::println);
 
 	}
 }    

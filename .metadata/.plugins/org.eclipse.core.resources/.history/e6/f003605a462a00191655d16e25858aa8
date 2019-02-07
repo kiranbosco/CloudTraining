@@ -1,0 +1,22 @@
+package com.exceptionHandiling;
+
+public class MultiCatachBlock {
+	
+	public int multicath() {
+		try {
+		
+	}
+		catch (ArithmeticException e) {
+			
+		}
+		
+
+	}
+
+
+public static void main(String[] args) {
+	
+	MultiCatachBlock m = new MultiCatachBlock();
+	m.multicath();
+}
+}

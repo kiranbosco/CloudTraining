@@ -1,0 +1,12 @@
+package com.basic;
+
+public class CharRepeat {
+	
+	public void charRepeat() {
+		
+		String str ="AABBCC";
+		String [] spl =  str.split("");
+		int count;
+	}
+
+}

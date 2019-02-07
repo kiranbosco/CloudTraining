@@ -1,0 +1,12 @@
+package com.exceptionHandiling;
+
+public class MultiCatachBlock {
+
+	public static void main(String args[]) {
+		try {
+			
+	}
+
+
+
+}

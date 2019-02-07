@@ -1,0 +1,15 @@
+package com.exceptionHandiling;
+
+public class MultiCatachBlock {
+	
+	public void multicath() {
+		
+		System.out.println("Heelo");
+	
+}
+	public static void main(String[] args) {
+		
+		MultiCatachBlock m = new MultiCatachBlock();
+m.multicath();
+}
+}

@@ -1,0 +1,14 @@
+package com.arrays;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class ConvertArrayToArrayList {
+	
+	public void vonvertPrimitive() {
+		
+	 String [] str = {"kiran","kumar","charan"};
+	 List<String> list = new ArrayList<>(Arrays.asList(str));
+	}
+
+}

@@ -1,9 +1,0 @@
-package com.interfaces;
-
-public class OverrideMethod {
-	
-	public static void  foo() {
-		System.out.println("Foo method()");
-	}
-
-}

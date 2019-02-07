@@ -1,0 +1,9 @@
+package com.exceptionHandiling;
+
+public class MultiCatachBlock {
+	
+	public void multicath() {
+		
+	
+}
+}
