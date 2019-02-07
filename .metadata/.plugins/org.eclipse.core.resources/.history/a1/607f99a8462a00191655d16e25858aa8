@@ -1,0 +1,20 @@
+package com.exceptionHandiling;
+
+public class MultiCatachBlock {
+	
+	public void multicath() {
+		
+		try {
+		int id =10/0;
+		
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+	
+}
+	public static void main(String[] args) {
+		
+		MultiCatachBlock  m = new MultiCatachBlock();
+		m.multicath();
+	}
+}

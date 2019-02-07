@@ -1,0 +1,11 @@
+package com.basic;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class FindIntegerDuplicates {
+
+	public static void main(String[] args) {
+
+
+}

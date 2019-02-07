@@ -1,0 +1,18 @@
+package com.exceptionHandiling;
+
+public class MultiCatachBlock {
+	
+	public int multicath() {
+		
+		int i =10;
+		int j =0;
+		return  i/j;
+	}
+
+
+public static void main(String[] args) {
+	
+	MultiCatachBlock m = new MultiCatachBlock();
+	m.multicath();
+}
+}

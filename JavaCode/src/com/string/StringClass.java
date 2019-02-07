@@ -2,6 +2,7 @@ package com.string;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
@@ -272,10 +273,30 @@ public class StringClass  {
 			getC.getChars(2, 10, ggs, 0);
 			System.out.println(ggs);
 			
-
-			
 		}
 		
+		System.out.println();
+		
+		//Count the reapeted charactors
+		
+		String repeat ="AABBCC";
+		String re1[] = repeat.split("");
+		int count=0;
+		HashMap< String, Integer> hs = new HashMap<>();
+		for(int rep=0; rep<re1.length; rep++) {
+			
+			String currentLetter = re1[rep];
+			if(!hs.containsKey(currentLetter)) {
+				hs.put(currentLetter, 1);
+				count =1;
+			}
+			else {
+				hs.put(currentLetter, count);
+				count =count + 1;
+			}
+	
+		}	
+		System.out.println(hs);
 }
 
 

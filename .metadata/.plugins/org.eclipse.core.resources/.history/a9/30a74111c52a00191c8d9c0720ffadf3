@@ -1,0 +1,18 @@
+package com.ArraysConcepts;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class ConvertArrayToList {
+
+	public static void main(String[] args) {
+
+//Duplicate arrays
+
+		int[] arr = {10,20,10,30};
+		
+		// convert the array
+		
+	}
+	}
