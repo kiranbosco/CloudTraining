@@ -31,10 +31,7 @@ public class FindDuplicates {
 		
 		// Or another way to find the duplicates in list
 		
-		
-		
-		Set<Integer> s = new HashSet<>(list);
-		s.addAll(list);
-		System.out.println(s);
+		Set s = new HashSet<>(list);
+		s.addAll(list)
 	}
 	}

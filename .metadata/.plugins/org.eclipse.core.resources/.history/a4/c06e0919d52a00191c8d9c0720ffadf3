@@ -16,24 +16,17 @@ public class FindDuplicates {
 		list.add(10);
 		list.add(120);
 		
-		ArrayList<Integer> num = new ArrayList<>();
-		for(Integer emp : list) {
-			
-			if(!num.contains(emp)) {
-				
-				num.add(emp);
-			}
-		}
-		for(Integer i : num) {
-			System.out.println(i);
-		}
-		
-		
+		/*
+		 * ArrayList<Integer> num = new ArrayList<>(); for(Integer emp : list) {
+		 * 
+		 * if(!num.contains(emp)) {
+		 * 
+		 * num.add(emp); } } for(Integer i : num) { System.out.println(i); }
+		 * 
+		 */
 		// Or another way to find the duplicates in list
 		
-		
-		
-		Set<Integer> s = new HashSet<>(list);
+		Set s = new HashSet<>(list);
 		s.addAll(list);
 		System.out.println(s);
 	}
