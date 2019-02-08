@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.instanceInitilizerBlock.B"/>
-<fullyQualifiedTypeName name="com.instanceInitilizerBlock.Parent.SubClass"/>
-<fullyQualifiedTypeName name="com.instanceInitilizerBlock.Parent"/>
-<fullyQualifiedTypeName name="com.instanceInitilizerBlock.Subclass"/>
-<fullyQualifiedTypeName name="java.rmi.server.SocketSecurityException"/>
-<fullyQualifiedTypeName name="com.instanceInitilizer.B"/>
 <fullyQualifiedTypeName name="com.TypeCasting.Michine"/>
 <fullyQualifiedTypeName name="com.TypeCasting.Video"/>
 <fullyQualifiedTypeName name="com.TypeCasting.Phone"/>
@@ -17,14 +11,11 @@
 <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
 <fullyQualifiedTypeName name="com.map.MapInfo"/>
 <fullyQualifiedTypeName name="com.interfaces.BaseClass"/>
-<fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="com.overloading.BaseClass"/>
 <fullyQualifiedTypeName name="com.overloading.SubCLass"/>
 <fullyQualifiedTypeName name="java.util.ListIterator"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="java.util.Map.Entry"/>
 <fullyQualifiedTypeName name="java.util.concurrent.ConcurrentHashMap"/>
 <fullyQualifiedTypeName name="com.collections.ConcurentModifcartionExe"/>
 <fullyQualifiedTypeName name="java.util.concurrent.CopyOnWriteArrayList"/>
@@ -50,14 +41,23 @@
 <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
 <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="com.collections.RemoveDuplicatesFromList"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="com.basic.FindIntegerDuplicates"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.arrays.ConvertArrayToArrayList"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.interfaces.SingleInheritance"/>
+<fullyQualifiedTypeName name="com.arrays.SampleSingleTone"/>
+<fullyQualifiedTypeName name="com.collections.HashMapAddElement"/>
+<fullyQualifiedTypeName name="java.util.TreeMap"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="com.collections.HashMapDuplicateValues"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>

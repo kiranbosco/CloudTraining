@@ -10,7 +10,7 @@ public class SingleToneExe {
 		
 		// this constructor is used to stop the values to outside  
 	}
-	
+	// instance
 	public static  SingleToneExe instances () {
 		
 		if(obj ==null) {

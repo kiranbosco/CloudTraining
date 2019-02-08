@@ -1,0 +1,15 @@
+package com.collections;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapDuplicateValues {
+
+	public static void main(String[] args) {
+
+		Map<Integer,String > hs = new HashMap<>();
+		hs.put(1, "krian");
+		hs.put(2, "kumar");	
+		hs.put(3, "kumar");
+	}
+}

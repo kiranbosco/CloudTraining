@@ -2,6 +2,7 @@ package com.arrays;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class ConvertArrayToArrayList {
@@ -13,6 +14,7 @@ public class ConvertArrayToArrayList {
 		List<String> list = new ArrayList<>(Arrays.asList(str));
 
 		for(String s : list) {
+		//	list.add(String.valueOf(s));
 
 			System.out.println(s);
 
@@ -57,13 +59,44 @@ public class ConvertArrayToArrayList {
 				}
 			}
 		}
+		
+	}
+	
+	// String repeate the charactor
+	
+	public void sttringRepeateCharactor() {
+		
+		String content ="AABBCC";
+		String contentArr[] = content.split("");
+		int count =0;
+		HashMap<String, Integer> hs = new HashMap<>();
+		for(int z =0; z<contentArr.length;z++) {
+			String currentLetter = contentArr[z];
+			if(!hs.containsKey(currentLetter)) {
+				hs.put(currentLetter, 1);
+				count =1;
+			}
+			else {
+				count = count+1;
+
+				hs.put(currentLetter, count);
+			}
+		}
+	
+		
+		System.out.println( " number of charactors are" + hs);
 
 	}
+	
+	
+	
 	public static void main(String[] args) {
 		ConvertArrayToArrayList c = new ConvertArrayToArrayList();
 		c.convertPrimitive();
 		c.convertArrayToArrayListIntegerVal();
 		c.asListUsingConvert();
 		c.arrayDuplicates();
+		c.sttringRepeateCharactor();
+	
 	}
 }

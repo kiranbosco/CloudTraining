@@ -1,0 +1,24 @@
+package com.collections;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+public class HashMapDuplicateValues {
+
+	public static void main(String[] args) {
+
+		Map<Integer,String > hs = new HashMap<>();
+		hs.put(1, "krian");
+		hs.put(2, "kumar");	
+		hs.put(3, "kumar");
+		hs.put(3, "kumar");
+		hs.put(2, "kumar");	
+		hs.put(2, "kumar");	
+
+
+		Set<Object> set = new HashSet<Object>(hs.values());
+		System.out.println(set);
+	}
+}
