@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Random;
 
 public class ConvertArrayToArrayList {
 
@@ -14,7 +15,7 @@ public class ConvertArrayToArrayList {
 		List<String> list = new ArrayList<>(Arrays.asList(str));
 
 		for(String s : list) {
-		//	list.add(String.valueOf(s));
+			//	list.add(String.valueOf(s));
 
 			System.out.println(s);
 
@@ -50,7 +51,7 @@ public class ConvertArrayToArrayList {
 
 
 	public void arrayDuplicates() {
-		
+
 		int arr[] = {11,55,11,20,10,45,66,70,70,45};
 		for(int i=0; i<arr.length-1; i++) {
 			for(int j=i+1;j<arr.length;j++) {
@@ -59,13 +60,13 @@ public class ConvertArrayToArrayList {
 				}
 			}
 		}
-		
+
 	}
-	
+
 	// String repeate the charactor
-	
+
 	public void sttringRepeateCharactor() {
-		
+
 		String content ="AABBCC";
 		String contentArr[] = content.split("");
 		int count =0;
@@ -82,14 +83,57 @@ public class ConvertArrayToArrayList {
 				hs.put(currentLetter, count);
 			}
 		}
-	
-		
+
+
 		System.out.println( " number of charactors are" + hs);
 
 	}
-	
-	
-	
+
+	public void stringReverse() {
+
+		String str ="Jesus save my life";
+
+		char ch[] = str.toCharArray();
+		for(int i=ch.length-1;i>=0;i--) {
+			System.out.println(ch[i]);
+		}
+
+	}
+
+	public void randomNum() {
+
+		Random ran = new Random();
+		int m = ran.nextInt(10000);
+		System.out.println(m);
+		
+		System.out.println();
+	}
+
+
+	public void  minAndMax() {
+
+
+		int arr [] = new int []{10,20,60};
+		int max = Integer.MIN_VALUE;
+		int min = Integer.MAX_VALUE;
+		for(Integer  num : arr) {
+
+			if(num>max) {
+				max = num;
+			}
+		}
+		System.out.println(" MaxNum " + max );
+
+		for(Integer num : arr) {
+			if(num<min) {
+				min=num;
+			}
+		}			
+		System.out.println("MinNum " + min);
+	}
+
+
+
 	public static void main(String[] args) {
 		ConvertArrayToArrayList c = new ConvertArrayToArrayList();
 		c.convertPrimitive();
@@ -97,6 +141,9 @@ public class ConvertArrayToArrayList {
 		c.asListUsingConvert();
 		c.arrayDuplicates();
 		c.sttringRepeateCharactor();
-	
+		c.stringReverse();
+		c.randomNum();
+		c.minAndMax();
+
 	}
 }

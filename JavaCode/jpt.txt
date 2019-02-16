@@ -1,0 +1,6 @@
+
+
+Question :- how to avoid the base class serialize  process it class already extend the subclass ?
+
+ans:- if ur extends the base class automatically it will come to sub class, we can do it customize to avoid the serialize process to 
+sub class  we can write the  writeObject method(), readObject() method and throw subclass throw notSerializeException

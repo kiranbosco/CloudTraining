@@ -32,7 +32,7 @@ public class MapTesting {
 				}
 			
 			
-			if(i<0 || i>3) {
+			if(i<=1 || i>3) {
 				System.out.println(i);
 			}
 

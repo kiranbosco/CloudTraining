@@ -1,6 +1,6 @@
 package com.abstractsConcepts;
 
-public abstract class Honda {
+public abstract class Honda { //cant declared any  final keyword in abstract class
 
 	abstract void run();
 

@@ -26,8 +26,8 @@ public class HashMapWIthBook {
 		Map<Integer, HashMapWIthBook> map = new HashMap<>();
 
 		HashMapWIthBook hs = new HashMapWIthBook(8, "krian", "charan", "vijay", 9);
-		HashMapWIthBook hsp = new HashMapWIthBook(4, "krian", "charan", "vijay", 9);
-		HashMapWIthBook hss = new HashMapWIthBook(3, "krian", "charan", "vijay", 9);
+		HashMapWIthBook hsp = new HashMapWIthBook(4, "charan", "purini", "vijay", 9);
+		HashMapWIthBook hss = new HashMapWIthBook(3, "sujatha", "namu", "vijay", 9);
 		map.put(1, hs);
 		map.put(3, hsp);
 		map.put(2, hss);
