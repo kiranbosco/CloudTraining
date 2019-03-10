@@ -1,6 +1,0 @@
-package com.arrays;
-
-public class SampleSingleTone {
-	
-private static SampleSingleTone obj=null;
-}

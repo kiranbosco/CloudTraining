@@ -1,9 +1,0 @@
-package com.overloading;
-
-public class TypePromote {
-
-	public static void main(String[] args) {
-
-	}	
-
-}

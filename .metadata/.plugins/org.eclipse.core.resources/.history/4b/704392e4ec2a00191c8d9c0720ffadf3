@@ -1,7 +1,0 @@
-package com.arrays;
-
-public class SampleSingleTone {
-	
-	public static void InstanceObject obj =null;
-
-}
