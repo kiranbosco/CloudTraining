@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="C:\Program Files\Java\jdk1.8.0_161" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="filter_imports;" key="filters_last_used"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item value="2" key="layout"/>
 		<item value="true" key="group_libraries"/>
@@ -44,8 +45,8 @@
 		<item value="8" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="completion_proposal_size">
-		<item value="734" key="size.y"/>
-		<item value="631" key="size.x"/>
+		<item value="353" key="size.y"/>
+		<item value="745" key="size.x"/>
 	</section>
 	<section name="AddGetterSetterDialog">
 		<item value="false" key="SortOrdering"/>

@@ -9,9 +9,7 @@ public class FunctionExe1 {
 		return FunctionExample.andThenMethod.apply(str);
 		
 	}
-	
-	
-	public static void main(String[] args) {
+public static void main(String[] args) {
 	
 		String result =performConcat("kiran kumar");
 		System.out.println("Result is " + result);

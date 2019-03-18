@@ -13,7 +13,7 @@ public class PredicateStudentExe {
 	
 	
 	
-	public static void pridicateFiltringGrade() {
+	public static Predicate<Student> pridicateFiltringGrade() {
 
 		List<Student> students =StudentDataBase.getAllStudent();
 		students.forEach((stu->{
@@ -24,6 +24,7 @@ public class PredicateStudentExe {
 		}));
 		
 		System.out.println();
+		return p;
 	}
 	
 	public static void getGpa() {
@@ -39,7 +40,7 @@ public class PredicateStudentExe {
 
 	}
 	
-	public static void getGpaGradeLevelAndMethod() {
+	public static Predicate<Student> getGpaGradeLevelAndMethod() {
 		
 		List<Student> getAll = StudentDataBase.getAllStudent();
 		getAll.forEach((stu->{
@@ -49,10 +50,11 @@ public class PredicateStudentExe {
 		}));
 		
 		System.out.println();
+		return p;
 
 	}
 	
-	public static void getGpaGradeLevelOrMethod() {
+	public static Predicate<Student> getGpaGradeLevelOrMethod() {
 	
 		List<Student> getsAll=StudentDataBase.getAllStudent();
 		getsAll.forEach((stu ->{
@@ -61,9 +63,10 @@ public class PredicateStudentExe {
 			}
 		}));
 		System.out.println();
+		return p;
 	}
 	
-	public static void getGpaGradeLeveNegaterMethod() { //  who is the not matching condition
+	public static Predicate<Student> getGpaGradeLeveNegaterMethod() { //  who is the not matching condition
 		
 		List<Student> notMatching =StudentDataBase.getAllStudent();
 		notMatching.forEach((stu->{
@@ -73,6 +76,7 @@ public class PredicateStudentExe {
 			else
 				System.out.println(stu);
 		}));
+		return p;
 	}
 	public static void main(String[] args) {
 		pridicateFiltringGrade();
