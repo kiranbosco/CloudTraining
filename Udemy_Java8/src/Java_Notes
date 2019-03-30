@@ -1,0 +1,225 @@
+	
+          -------------PURINI KIRAN KUMAR_JAVA8 _ DOCUMENT---------------------
+
+  Imparativ style :- java 7
+int sum=0;
+  for(int i=0; i<100; i++){
+  int sum +=i;
+  }
+  Sou(sum)
+--------------------------------------------------------------------
+  declarative style:-
+  int sum =IntStream.range(0,100)
+  .sum();
+  Sop(sum
+-----------------------------------------------------------------------
+  LAMBDA :- it with out a name it is the method reference and method body and method parameters
+  lambda syntex :-   () -> {} METHOD  ,ARROW  ,BODY
+ usage of lambda :- it is use to functional interface in java
+	  or (sam) single abstract method
+
+Straams API :-
+	  a stream is element which is the create the element of collection such as arraylist and linked list in java collections
+	  
+	  what is the  lambda ?
+	  ans :- lambda is the anonymus lambdas are refered as anonymus functions
+	  1 method parameters
+	  2 method body
+	  3 return type
+lambdas are not tied to any class like a regular methods lambdas can also be assigned to varable and passed arround
+	   () = method input
+	   ->arrow
+	   {} = method body
+	   usage of lambda:- it is the mainly usage of impliments of functions or(sam)
+	   @FunctionalInteface
+	   public interface Comparator<T
+	   int compare(T o1 , T o2)
+	   }
+	   	   @FunctionalInteface
+	   public interface Runnable<T
+	   public abstract void run(){
+	   }
+-------------------------------------------------------------------------------------------
+ Comparator example :-
+	   using comparator intefface in lambda expression in java
+	   ex:- 			//Imparative Style in java7
+		Comparator<Integer> imparativeStyle = new Comparator<Integer>() {
+			@Override
+			public int compare(Integer o1, Integer o2) {
+				return o1.compareTo(o2);
+			}
+		};
+                                   	System.out.println("Imparative Style  : " +imparativeStyle.compare(3, 2) ) ;    
+-------------------------------------------------------------------------------------------------------------------
+		//Declarative Style in java8
+		Comparator<Integer>declarativeStyle =(Integer a, Integer b)->a.compareTo(b);
+		System.out.println("Imparative Style  : " +imparativeStyle.compare(3, 5) ) ;
+	}
+}
+-------------------------------------------------------------------------------------------------------------------
+any inteface can have one abstract mehthod which is the functional interface
+		 * in java There are four type of interface in java 8
+		 * consumer
+		 * predicate 
+		 * function
+		 * supplier
+		 Note :- each and every interface have there  own extentions in java 
+		 like  consumer - BiConsumer
+		       Predicate = BiPredicare
+			   Function - BiFunction
+-------------------------------------------------------------------------------------------------------------------
+Consumer  Interfaca :-
+		  it will never return any thing  it is consist the one method accept(); it is the accept some input and perfome some operation		  
+		  ex:- accept(T t);
+-------------------------------------------------------------------------------------------------------------------
+Biconsumer:-
+		Each and every consumer function extentions BiConsumer interface
+		There is the two method in java 8 1 . accept() and 2. andThen();
+		Note :- consumer can accept one method that is the accept(T t){}  
+and when u see the BiConsumer method can take the two parameters and perfome some operationas like this accept(T t, U u){}  it is the consiste the two methods
+1  accept() and 
+2. andThen();
+----------------------------------------------------------------------------------------------------------
+Predicate interface :- it is the part of the java.util.functional inteface this is an abstract method it is going accept boolean method and perform some operation and return boolean value
+		it is going to suport some of operation andOperation and orOperation and negate Operation it is the going to reverced expression of value
+		
+------------------------------------------------------------------------------------------------------------------
+BiPredicare :- it is the function it is consist test() and it will accept the two parameters
+---------------------------------------------------------------------------------------------------------------
+FunctionalInteface : - it has one abstract method apply()	
+any interface can have one abstract method is called as  functional inteface it is the opetional inteface
+Function it is take the one input and return the out put( T t) its consist apply method(),compose() and andThen() are consist it Function inteface
+---------------------------------------------------------------------------------------------------------------
+BiFunction Input :- bifunction can be accept two inputs and and reutn out put it dos have only one method that is the andThen();
+bifunction can take  the two parameters first two parameters are input values and third one is output of values
+--------------------------------------------------------------------------------------------------------------
+Unary Operatot :- in this function whenever you gona get same input and out put response is same type that type senarious we can use  the unary operator in java8  it consist apply()		
+----------------------------------------------------------------------------------------------------------------
+
+Supplier :- it is contain onnne method thats get() supplier doent take any input but it willl return out put()
+it is similar to consumer but consumer can take the input never return any type but supplier never take the input but it will ber return out put()
+---------------------------------------------------------------------------------------------------------------
+	 Method Reference :- 
+ it is simplify the impliments of java8 functional interface it is the shortcut the method ference 
+Syntex of Method Reference:-
+	 ClassName :: Instance-methodName();
+	 ClassName :: static-MethodName();
+	 instace :: methodName();
+	 where to use the method reference;-
+	 1 Lambda expression refering to a method directly
+	 exe :- Function<String ,String> toUperCaseLambda =(s)->s.toUpperCase();
+	 same method rewrite the method refered like this
+	 Function<String ,String>toUpperCaseLambda=String.toUpperCase;
+	 where method reference is not applicable :-
+	  if  ur impliments ur own logic that senarious it will not be work
+	   exe :-
+	   Predicate<Student> predicateUsigLambda =(s)->s.getGradeLevel()>=3;
+-------------------------------------------------------------------------------------------------------------------
+		 CONSTRUCTOR METHOD Reference EXE:-	 
+ it is the  similar to method reference but there is some changes we can use the  class name and :: new operator
+ exe: Supplier<Student> studentSupplier =Student::new ;
+--------------------------------------------------------------------------------------------------------------
+		 
+		 LAMBDA AND LOCAL VARABLE:-
+		 1f any varable declar inside the method is called as  the local variable
+		 Note :- lambda has some restrict has using local varable 
+		  
+		  1. Not allow to use the same the local variable name as lambda parameter or inside        the lambda body
+		  2 not allow re-using a value to a local variable 
+		 NOTE:- NO RESTRACTION TO USE THE Instance VARABLE
+----------------------------------------------------------------------------------------------------	 
+		 EFECTIVELY FINAL:- 
+		   
+  lambdas are allow to use ethe local variable but not allow to modify it even through theyare not declar final this concept is  called   efectively final Advantages of efectively final:-
+ 1. easy to perfome concurancy operation
+ 2 efectively final  is going to final to develope the applicable easy 
+ 3 this will provided the functional programing and imparativ programing style
+------------------------------------------------------------------------------------------------------------------
+		            STREAMS
+ Streams :- stream is a sequence of element which can be create out of a collection such as list or array or nay kind of i/o resource and etc
+ exe:- List<String> list =Arrays.asList("kiran","kumar"."Heemaja","charan");
+ list.streams()// create a stream stream operation can perform either sequencily or parallel 
+ list.parllelStream() // create the parallelstream
+
+NOTE   
+
+STREAMS :- IT IS THE COLLECTION OF LIST OR COLLECTION OF STUDENT LIST FILTRING :- WHICH IS THE PERFORM THE CONDITIONAL BASED ON UR REQUIREMENT SUPOSE IF YOU WANT GET GPA DATA LESSTHEN 3 THEBN YOU CAN  USE THE FILTRING METHOD() 
+COLLECT :-THE COLLECT METHOD IS TO CONVERT THE WHICH WE DESIRE THE FINAL OUT PUT RESULT
+		
+NOTE :- Difference between Collections and Streams
+		COLLECTIONS	STREAMS
+1 .  In collection we can add and remove case at any point , list-> list.add(<element>)	
+2 .  element in the collection can be accessd any order use appropriate method based  on the collection 2 exe:-  List-> list.get(4);
+3. collection  is eagerly constructed collection can be traved any no of times
+4. perfom external iteration iterate the element
+			1.	cant add or modify element in the stream it is the fixed data set
+2.	element in the stream can be accessd only in  sequence
+3.	stream are lazily constructed  streams can be traved only once
+4.	perfom internal iteration to iterate through the element
+
+	 NOTE :- Doest add and remove opetion in streams in java8
+
+Debuging in streams :- there is  one method  peek() this method will be debuging in streams peek method consist the consumer method it it will take the input anver return any output
+Exe: streams().peek( sts->{System.out.println(sts);
+})
+Streams Methods :- 
+1 . toMap :- this is the static method  of  collectors method of collection and return a collector which collects into map keys and values  are the result of  applying  mapping function into the input element the collector class java.util.cpackage
+
+2. map Method :- this method will be convert one type to another type in java or we can perform some Operation also 
+Exe :- 1   
+Note :- In this method print all studentNames Small cases because here we are not perform any toUpper casemethod 
+public static List<String> studentListOfNames()  {
+ List<String> studdentList = StudentDataBase.getAllStudentsData().streams().map(Student :: getNames).collect.collectors.toList());
+Return studdentList;
+}
+Exe :- 2  
+Note :- In this method print all studentNames Upper cases because here we are perform  toUpper casemethod uing map method()
+public static List<String> studentListOfNames()  {
+ List<String> studdentList = StudentDataBase.getAllStudentsData().streams().map(Student :: getNames).map(String :: toUpperCase)
+.collect.collectors.toList());
+Return studdentList;
+}
+3. toList Method :- thsi method will collect the collection of list and return out put
+Exe :- 1
+public static List<Stirng> listOfNames(){
+ Llist <String> studentList = StudentDataBase.getAllStudentData().streams.map(Student :: getNames).collect.collectors . toList());
+Return studentList;
+}
+
+
+Streams Api FlatMapper :-  This flatMapper method is use the conver the one type to another type use like the map() 
+Use in the context of stream where each tuype in the stream repracent int o multile elements
+1 Stream <List>
+2 Strean <Arrays>
+
+Streams API :- 
+Distinct() :- it will be return the stream of unique values only
+ Count () :-  it will be return the all the stream api values   		
+Sorted () :- it will be return the all the values sorting 
+
+Filter function :- the element in the stream input  to the filter is a predicate functional interface
+It will be filtring the values  
+Exe : if you want to check the studnetGpa >=3.9 how would you check here like this
+StudntDataBase.getAllStudnt().streams().filter(stu->stu.getGpa>=3).collect(collectors.toList());
+
+ Reduce() : - The reduce operation always returns a new value. However, the accumulatorfunction also returns a new value every time it processes an element of a stream. Suppose that you want to reduce the elements of a stream to a more complex object, such as a collection.
+	 its take the two  parameter as an input
+	First parameter -default or initial value
+	secound paremeter - binaryOperator<T>
+
+
+
+
+	
+
+Stream API : list()  and  Skip() :-  this two  method are helps to create the substream	
+limit( n ) :-  its take the input  "n"  number of elements perform supose if ur passing 10 elements in ur stream ur want to perform 5 only that time it will be useful this method
+skip( n ) :- its take the input and perform some operation if you want to skip some operation then you can use this method()
+
+
+
+
+
+
+
+                             
