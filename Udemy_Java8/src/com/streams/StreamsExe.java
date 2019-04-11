@@ -23,6 +23,12 @@ public class StreamsExe {
 
 		Map<String, Double>info = StudentDataBase.getAllStudents().stream().filter(studentGpa).collect(Collectors.toMap(Student::getName,Student::getGpa));
 		System.out.println(info);
+
+		Map<String , List<String>> stu = StudentDataBase.getAllStudents().stream().collect(Collectors.toMap(Student::getName,Student::getActivities));
+		System.out.println(stu);
+
+
+
 	}
 
 }

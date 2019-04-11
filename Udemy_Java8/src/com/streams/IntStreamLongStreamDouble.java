@@ -1,7 +1,13 @@
 package com.streams;
 
+import com.learnJava.data.Student;
+import com.learnJava.data.StudentDataBase;
+
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class IntStreamLongStreamDouble {
@@ -25,6 +31,25 @@ public class IntStreamLongStreamDouble {
 		
 		System.out.println(" second Approch " + sumOfNumberUseIntStream());
 
+
+		List<String> dup =Arrays.asList("kiran","kumar","bosco","kiran");
+		List<String> dupl = dup.stream().sorted().collect(Collectors.toList());
+		System.out.println(dupl);
+
+	List<Student> allData =	StudentDataBase.getAllStudents().stream().sorted(Comparator.comparing(Student::getName)).distinct().collect(Collectors.toList());
+
+		allData.forEach(System.out::println);
+
+		//flatmapper
+		System.out.println();
+
+	Long logns =StudentDataBase.getAllStudents().stream().map(Student::getActivities)
+				.flatMap(List::stream).distinct().count();
+		         System.out.println(logns);
+
+
+		      Map<String ,Double> listOfMap =   StudentDataBase.getAllStudents().stream().collect(Collectors.toMap(Student::getName,Student::getGpa));
+	       	System.out.print(listOfMap);
 	}
 
 }

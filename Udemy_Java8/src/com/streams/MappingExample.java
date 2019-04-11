@@ -26,6 +26,8 @@ public class MappingExample {
 		Set<String> set = StudentDataBase.getAllStudents().stream()
 				.map(Student::getName).collect(Collectors.toSet());
 		System.out.println("StudentDataBase Unique" + set);
+
+
 	}
 
 }
